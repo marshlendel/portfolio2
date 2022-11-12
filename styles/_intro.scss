@@ -1,0 +1,57 @@
+.intro {
+  @include flex(space-between, center, row);
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+}
+
+.intro-text {
+  flex: 5 1 40rem;
+  h2 {
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-size: 7.5rem;
+    padding-top: 1.5rem;
+  }
+
+  h3 {
+    font-size: 5.5rem;
+    padding: 2rem 0;
+    line-height: 6rem;
+  }
+
+  p {
+    padding-top: 1.5rem;
+    color: $gray-text;
+  }
+}
+
+.intro-social {
+  padding-top: 5rem;
+
+  a {
+    margin-right: 2rem;
+  }
+}
+
+.intro-images {
+  flex: 1 1 40rem;
+
+  .splash {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.active {
+  background-color: $gray-text;
+  padding: 1rem 2.5rem;
+  color: white;
+  border-radius: 2rem;
+}
