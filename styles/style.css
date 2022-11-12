@@ -131,4 +131,77 @@ nav ul {
   padding: 1rem 2.5rem;
   color: white;
   border-radius: 2rem;
+}
+
+#clock-arrow {
+  -webkit-animation: clock 1.5s infinite linear;
+          animation: clock 1.5s infinite linear;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#me {
+  -webkit-animation: me 1.5s ease alternate infinite;
+          animation: me 1.5s ease alternate infinite;
+  transform-origin: bottom;
+}
+
+#plant-left {
+  -webkit-animation: plant 1.5s alternate ease infinite 0.5s;
+          animation: plant 1.5s alternate ease infinite 0.5s;
+}
+
+#plant-right {
+  -webkit-animation: plant 1.5s alternate ease infinite;
+          animation: plant 1.5s alternate ease infinite;
+}
+
+@-webkit-keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-25%);
+  }
+}
+
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-25%);
+  }
+}
+@-webkit-keyframes me {
+  from {
+    transform: rotateZ(-3deg);
+  }
+  to {
+    transform: rotateZ(3deg);
+  }
+}
+@keyframes me {
+  from {
+    transform: rotateZ(-3deg);
+  }
+  to {
+    transform: rotateZ(3deg);
+  }
+}
+@-webkit-keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */
