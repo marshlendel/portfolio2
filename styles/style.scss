@@ -17,6 +17,7 @@ $gray-text: #2c2c2c;
 @import "./global";
 @import "./header.scss";
 @import "./intro";
+@import "./projects";
 
 @media screen and (max-width: 1300px) {
   html {
@@ -78,4 +79,6 @@ $gray-text: #2c2c2c;
     margin-top: 8rem;
     text-align: center;
   }
+
+ 
 }
