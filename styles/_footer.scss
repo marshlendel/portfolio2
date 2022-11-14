@@ -1,0 +1,8 @@
+footer {
+  background: $background-color;
+  color: white;
+  min-height: 10vh;
+  padding: 0% 5%;
+  @include flex(flex-start, center, row);
+  text-align: center;
+}

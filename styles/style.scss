@@ -18,6 +18,8 @@ $gray-text: #2c2c2c;
 @import "./header.scss";
 @import "./intro";
 @import "./projects";
+@import "./contact";
+@import "./footer";
 
 @media screen and (max-width: 1300px) {
   html {
